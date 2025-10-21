@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <!-- Ekranas -->
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:gravity="end|center_vertical"
+        android:padding="12dp"
+        android:text="@string/zero"
+        android:textSize="38sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Mygtukai (5 eilutes po 4 mygtukus) -->
+    <LinearLayout
+        android:id="@+id/rowsContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txtDisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.68">
+
+        <!-- Pirma eilute -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_c"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnBackspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_backspace"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnSign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_sign"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_divide"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Antra eilute -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_7"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_8"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_9"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_multiply"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Trecia eilute -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_4"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_5"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_6"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_minus"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Ketvirta eilute -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_1"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_2"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_3"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_plus"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Penkta eilute -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSqrt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_sqrt"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_0"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_dot"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnEquals"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="8dp"
+                android:text="@string/label_equals"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

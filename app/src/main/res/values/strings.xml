@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="zero">0</string>
+
+    <!-- Skaitmenys -->
+    <string name="label_0">0</string>
+    <string name="label_1">1</string>
+    <string name="label_2">2</string>
+    <string name="label_3">3</string>
+    <string name="label_4">4</string>
+    <string name="label_5">5</string>
+    <string name="label_6">6</string>
+    <string name="label_7">7</string>
+    <string name="label_8">8</string>
+    <string name="label_9">9</string>
+
+    <!-- Operatoriai -->
+    <string name="label_plus">+</string>
+    <string name="label_minus">−</string>
+    <string name="label_multiply">×</string>
+    <string name="label_divide">÷</string>
+    <string name="label_equals">=</string>
+    <string name="label_dot">.</string>
+    <string name="label_sqrt">√</string>
+
+    <!-- Papildomi -->
+    <string name="label_c">C</string>
+    <string name="label_backspace">⌫</string>
+    <string name="label_sign">±</string>
+
+    <!-- Klaidu pranesimai -->
+    <string name="msg_div_by_zero">Error</string>
+    <string name="msg_invalid_input">Error</string>
+</resources>
